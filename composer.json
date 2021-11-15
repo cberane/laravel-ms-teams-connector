@@ -3,7 +3,10 @@
     "description": "Laravel Integration of `cberane/ms-teams-connector` for easier usage of Microsoft Teams Webhooks",
     "keywords": [
         "cberane",
-        "laravel-ms-teams-connector"
+        "laravel-ms-teams-connector",
+        "Microsoft Teams",
+        "Laravel",
+        "Integration"
     ],
     "homepage": "https://github.com/cberane/laravel-ms-teams-connector",
     "license": "MIT",
@@ -11,7 +14,7 @@
     "authors": [
         {
             "name": "Cristoph Berane",
-            "email": "cristoph@bearne.eu",
+            "email": "cristoph@berane.eu",
             "role": "Developer"
         }
     ],
