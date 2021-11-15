@@ -1,0 +1,55 @@
+{
+    "name": "cberane/laravel-ms-teams-connector",
+    "description": "Laravel Integration of `cberane/ms-teams-connector` for easier usage of Microsoft Teams Webhooks",
+    "keywords": [
+        "cberane",
+        "laravel-ms-teams-connector"
+    ],
+    "homepage": "https://github.com/cberane/laravel-ms-teams-connector",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cristoph Berane",
+            "email": "cristoph@bearne.eu",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "cberane/ms-teams-connector": "^1.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cberane\\LaravelMsTeamsConnector\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cberane\\LaravelMsTeamsConnector\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cberane\\LaravelMsTeamsConnector\\LaravelMsTeamsConnectorServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMsTeamsConnector": "Cberane\\LaravelMsTeamsConnector\\LaravelMsTeamsConnectorFacade"
+            }
+        }
+    }
+}
